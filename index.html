@@ -1,60 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #0f172a;
-            color: white;
-        }
-        header {
-            text-align: center;
-            padding: 50px;
-            background: #1e293b;
-        }
-        section {
-            padding: 30px;
-        }
-        .project {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-        a {
-            color: #38bdf8;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    background: #1e293b;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+header h1 {
+    font-size: 40px;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* PROJECT CARD */
+.project {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+}
+</style>
+
 </head>
 <body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
 <header>
     <h1>Ogunsola Israel</h1>
     <p>Web Developer | UI Builder | Problem Solver</p>
 </header>
 
-<section>
+<section id="about">
     <h2>About Me</h2>
     <p>I am a Computer Science graduate passionate about building web applications and solving real-world problems using technology.</p>
 </section>
 
-<section>
+<section id="projects">
     <h2>Projects</h2>
+
     <div class="project">
         <h3>Text-to-Speech Bible App</h3>
         <p>A web app that reads Bible verses aloud using text-to-speech technology.</p>
     </div>
+
 </section>
 
-<section>
+<section id="contact">
     <h2>Contact</h2>
     <p>Email: jomilojuogunsola123@gmail.com</p>
     <p>Phone: 07086655731</p>
 </section>
+
+<footer>
+    <p>© 2026 Ogunsola Israel</p>
+</footer>
 
 </body>
 </html>
